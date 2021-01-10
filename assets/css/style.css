@@ -16826,7 +16826,8 @@ a.card {
   padding: 0.5rem 30px; }
   .toc .nav-link:hover {
     color: #000;
-    border-color: #adb5bd; }
+    border-color: transparent;
+    /*border-color: #adb5bd;*/ }
   .toc .nav-link.active {
     color: #960606;
     border-color: #cc0000; }
