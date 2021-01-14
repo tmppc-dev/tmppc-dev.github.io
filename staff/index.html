@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../assets/css/vendor.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Control Management System</title>
 
@@ -21,7 +21,7 @@
             <div class="sticky">
               <nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
                 <div class="d-flex">
-                  <a href="" class="navbar-brand"><img src="../assets/img/tmppc-logo.svg" alt="Logo"><!-- <span class="badge badge-green ml-2">1.0.0</span> --></a>
+                  <a href="" class="navbar-brand"><img src="assets/img/tmppc-logo.svg" alt="Logo"><!-- <span class="badge badge-green ml-2">1.0.0</span> --></a>
                   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -35,10 +35,10 @@
                       <div class="collapse show" id="menu-1" data-parent="#page-nav">
                         <ul class="nav flex-column">
                           <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Introduction</a>
+                            <a class="nav-link active" href="/">Introduction</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="#">My Page Module</a>
+                            <a class="nav-link" href="admin/my-page.html">My Page Module</a>
                           </li>
                         </ul>
                       </div>
@@ -49,7 +49,7 @@
                         <div>
                           <ul class="nav flex-column">
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Introduction</a>
+                              <a class="nav-link" href="/staff">Introduction</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Module 01</a>
@@ -67,7 +67,7 @@
                         <div>
                           <ul class="nav flex-column">
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Introduction</a>
+                              <a class="nav-link" href="/company">Introduction</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Module 01</a>
@@ -100,7 +100,7 @@
                         <ol class="breadcrumb d-inline-flex">
                           <!-- <li class="breadcrumb-item"><a href="">Home</a></li> -->
                           <li class="breadcrumb-item"><a href="">Documentation</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Admin System</li>
+                          <li class="breadcrumb-item active" aria-current="page">Staff System</li>
                         </ol>
                       </nav>
                     </div>
@@ -115,35 +115,18 @@
             <div class="row doc-content-body">
               <article class="col-md">
 
-                <h1>My Page Module</h1>
-                <p>My Page module is the first main core function of the new Control Management System. My Page module contains the Calendar Events Page, Sales Management -  Monthly and Sales Management - Division.</p>
+                <h1>Control Panel Management Walkthrough</h1>
+                <p>The following demonstrate the flow of control panel management processes.</p>
 
-                <section id="calendar-events">
-                  <h2 class="section-title-2">Calendar Events Page</h2>
-                  <p>Calendar Events is the default page when you log-in in the system. The week view will automatically shown in the calendar event. In this module you may add reminders for the selected date, you may add or edit holidays and add schedules. Notifications will appear once you add reminders or holidays and schedules in the calendar module. Also, Calender is a new module that deals with adding events and reservation. Users can click on the chosen date from the calendar to add a new reservation. Then the modal form will popup and to be filled up. Once completed, users can now add the reservation by clicking the blue button below the modal form. Users can also edit the Reservation by simply clicking the event ticket on the calendar and the same modal form will show. Users can also drag the event ticket into a different date on the calendar, this is the same with editing the date on the popup modal form. (more details on screenshots below)</p>
-                  <figure class="figure">
-                    <img src="../assets/img/page-calendar.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption text-right">Calendar Week View (Default Page)</figcaption>
+                <section id="login-page">
+                  <h2 class="section-title-2">Login Page</h2>
+                  <p>When accessing the control panel management page, the web application verifies if there is an active session, or currently logged on user in the site. Once there isn’t any logged on user, the web application shows the login page:</p>
+                  <figure class="figure mb-3">
+                    <img src="assets/img/page-login.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption text-right">Login Page</figcaption>
                   </figure>
+                  <p>The new design is much more appealing to the eyes, as the username and password fields are located in the middle of the page, right in front of the user’s eyes. Admin, Staff and Company Sales logged in separately by selecting it in the user-type field.</p>
                 </section>
-
-                <section id="sales-management-monthly">
-                  <h2 class="section-title-2 mb-2">Sales Management - Monthly Page</h2>
-                  <figure class="figure">
-                    <img src="../assets/img/page-calendar.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption text-right">Sales Management - Monthly Page</figcaption>
-                  </figure>
-                </section>
-
-                <section id="sales-management-division">
-                  <h2 class="section-title-2 mb-2">Sales Management - division Page</h2>
-                  <figure class="figure">
-                    <img src="../assets/img/page-calendar.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption text-right">Sales Management - division Page</figcaption>
-                  </figure>
-                </section>
-
-
 
               </article>
 
@@ -152,13 +135,7 @@
                 <div class="sticky">
                   <ul id="toc" class="nav flex-column toc">
                     <li class="nav-item">
-                      <a data-scroll class="nav-link" href="#calendar-events">Calendar Events Page</a>
-                    </li>
-                    <li class="nav-item">
-                      <a data-scroll class="nav-link" href="#sales-management-monthly">Sales Management - Monthly Page</a>
-                    </li>
-                    <li class="nav-item">
-                      <a data-scroll class="nav-link" href="#sales-management-division">Sales Management - Division Page</a>
+                      <a data-scroll class="nav-link" href="#login-page">Login Page</a>
                     </li>
                   </ul>
                 </div>
@@ -180,7 +157,7 @@
       <div class="container">
         <div class="row gutter-3">
           <div class="col-12 col-md-4">
-            <a href=""><img src="../assets/img/tmppc-logo-white.svg" alt="Logo"></a>
+            <a href=""><img src="assets/img/tmppc-logo-white.svg" alt="Logo"></a>
           </div>
           <div class="col-12 col-md text-white d-flex align-items-center">
             <p>&copy;2021 T Management Partners Philippines Corporation. All rights reserved.</p>
@@ -217,8 +194,7 @@
     <!-- / footer -->
 
 
-
-<script src="../assets/js/vendor.min.js"></script>
-<script src="../assets/js/app.js"></script>
+<script src="assets/js/vendor.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
